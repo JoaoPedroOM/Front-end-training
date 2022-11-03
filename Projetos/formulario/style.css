@@ -12,11 +12,15 @@ body{
 
   background: #E5E5E5;
 }
+:root{
+  font-size: 62.5%;
+}
+
 
 body::before{
   content: '';
   width: 100%;
-  height: 368px;
+  height: 36.8rem;
 
   position: absolute;
   top: 0px;
@@ -25,43 +29,43 @@ body::before{
   background: #121214;
 }
 .page{
-  width: 736px;
+  width: 73.6rem;
   margin: 0 auto;
 
 }
 header{
-  width: 319px;
+  width: 31.9rem;
 
-  margin-top: 74px;
+  margin-top: 7.4rem;
 }
 header h1
 {
   font-family: 'Archivo', sans-serif;
   font-weight:bold;
-  font-size: 2rem;
-  line-height: 42px;
+  font-size: 3.6rem;
+  line-height: 4.2rem;
   color:white;
 
-  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
 }
 header p {
  color:#42d3ff;
- font-size: 1rem;
- line-height: 26px;
+ font-size: 1.6rem;
+ line-height: 2.6rem;
 
 }
 
 form{
   background:#FAFAFC ;
 
-  margin-top: 38px;
-  min-height: 300px;
+  margin-top: 3.8rem;
+  min-height: 30.0rem;
   border-radius: 8px 8px 0 0;
 
-  padding: 64px;
+  padding: 6.4rem;
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 4.8rem;
 }
 
 fieldset
@@ -72,17 +76,17 @@ fieldset
 .fieldset-wrapper{
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 2.4rem;
 }
 
 fieldset legend{
   font-weight: 600;
-  font-size: 1.5rem;
-  line-height: 34px;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
 
   border-bottom:1px solid #E6E6F0;
   width: 100%;
-  padding-bottom:16px;
+  padding-bottom:1.6rem;
 }
 
 .input-wrapper{
@@ -92,20 +96,20 @@ fieldset legend{
 
 .input-wrapper label
 {
-  font-size: 0.87rem;
-  line-height: 24px;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
 
   color:#4E4958;
-  margin-bottom: 8px;
+  margin-bottom: 0.8rem;
 
 }
 
 .input-wrapper label span{
-  margin-left: 12px;
+  margin-left: 1.2rem;
 
   color:#6c6a71;
-  font-size: 0.75rem;
-  line-height: 20px;
+  font-size: 1.2rem;
+  line-height: 2.0rem;
 }
 .input-wrapper input, .input-wrapper textarea, .input-wrapper select
 {
@@ -114,11 +118,11 @@ fieldset legend{
   border: 1px solid #E6E6F0;
   border-radius: 8px;
 
-  height: 56px;
+  height: 5.6rem;
   padding:0 24px;
 
-  font-size: 1rem;
-  line-height: 26px;
+  font-size: 1.3rem;
+  line-height: 2.6rem;
   color: #6c6a71;
 
 
@@ -126,7 +130,7 @@ fieldset legend{
 
 .input-wrapper textarea{
   padding:10px 24px;
-  height: 168px;
+  height: 16.8rem;
 }
 
 .input-wrapper select{
@@ -144,7 +148,7 @@ fieldset legend{
 .cols{
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 2.0rem;
 }
 
 .cols > div:nth-child(1)
@@ -152,8 +156,8 @@ fieldset legend{
   width: 100%;
 }
 .checkbox-wrapper{
-  font-size: 0.87rem;
-  line-height: 24px;
+  font-size: 1.3rem;
+  line-height: 2.4rem;
 
   color:#4E4958;
   position: relative;
@@ -161,8 +165,8 @@ fieldset legend{
 }
 .checkbox-wrapper input{
   position: absolute;
-  width: 24px;
-  height: 24px;
+  width: 2.4rem;
+  height: 2.4rem;
 
   opacity: 0;
 
@@ -172,17 +176,17 @@ fieldset legend{
   display: flex;
   align-items: center;
   margin: 0;
-  gap: 16px;
+  gap: 1.6rem;
   
 }
 .checkbox-wrapper label::before{
   content: '';
-  width: 24px;
-  height: 24px;
+  width: 2.4rem;
+  height: 2.4rem;
   display: block;
 
   border: 1px solid #e6e6e6;
-  border-radius: 8px;
+  border-radius: 0.8rem;
 }
 
 .checkbox-wrapper input:checked + label::before{
@@ -198,13 +202,13 @@ fieldset legend{
 
 footer{
   background: #f0f0f4;
-  height: 136px;
+  height: 13.6rem;
   display: flex;
   flex-direction: column;
 
-  padding: 40px 64px;
+  padding: 4.0rem 6.4rem;
 
-  margin-bottom: 100px;
+  margin-bottom: 10.0rem;
 
   border-top: 1px solid #D6D6D6;
   border-radius: 0px 0px 8px 8px;
@@ -212,11 +216,11 @@ footer{
 
 }
 footer .button{
-  width: 608px;
-  height: 56px;
+  width: 60.8rem;
+  height: 5.6rem;
 
   color: white;
-  font-size:1rem;
+  font-size:1.6rem;
   background: #04D361;
   border-radius: 8px;
   border: none;
