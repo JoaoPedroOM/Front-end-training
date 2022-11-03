@@ -1,0 +1,232 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body,input,select,textarea,button{
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+
+  background: #E5E5E5;
+}
+
+body::before{
+  content: '';
+  width: 100%;
+  height: 368px;
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  background: #121214;
+}
+.page{
+  width: 736px;
+  margin: 0 auto;
+
+}
+header{
+  width: 319px;
+
+  margin-top: 74px;
+}
+header h1
+{
+  font-family: 'Archivo', sans-serif;
+  font-weight:bold;
+  font-size: 2rem;
+  line-height: 42px;
+  color:white;
+
+  margin-bottom: 24px;
+}
+header p {
+ color:#42d3ff;
+ font-size: 1rem;
+ line-height: 26px;
+
+}
+
+form{
+  background:#FAFAFC ;
+
+  margin-top: 38px;
+  min-height: 300px;
+  border-radius: 8px 8px 0 0;
+
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+fieldset
+{
+  border:none;
+
+}
+.fieldset-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+fieldset legend{
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 34px;
+
+  border-bottom:1px solid #E6E6F0;
+  width: 100%;
+  padding-bottom:16px;
+}
+
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label
+{
+  font-size: 0.87rem;
+  line-height: 24px;
+
+  color:#4E4958;
+  margin-bottom: 8px;
+
+}
+
+.input-wrapper label span{
+  margin-left: 12px;
+
+  color:#6c6a71;
+  font-size: 0.75rem;
+  line-height: 20px;
+}
+.input-wrapper input, .input-wrapper textarea, .input-wrapper select
+{
+  background: #FAFAFC;
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+  height: 56px;
+  padding:0 24px;
+
+  font-size: 1rem;
+  line-height: 26px;
+  color: #6c6a71;
+
+
+}
+
+.input-wrapper textarea{
+  padding:10px 24px;
+  height: 168px;
+}
+
+.input-wrapper select{
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+
+   background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+
+   background-repeat: no-repeat;
+   background-position: right 24px top 50%;
+}
+
+.cols{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.cols > div:nth-child(1)
+{
+  width: 100%;
+}
+.checkbox-wrapper{
+  font-size: 0.87rem;
+  line-height: 24px;
+
+  color:#4E4958;
+  position: relative;
+
+}
+.checkbox-wrapper input{
+  position: absolute;
+  width: 24px;
+  height: 24px;
+
+  opacity: 0;
+
+}
+.checkbox-wrapper label{
+  
+  display: flex;
+  align-items: center;
+  margin: 0;
+  gap: 16px;
+  
+}
+.checkbox-wrapper label::before{
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: block;
+
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+}
+
+.checkbox-wrapper input:checked + label::before{
+
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_802_20)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_802_20'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+
+}
+
+
+.checkbox-wrapper input:focus + label::before{
+  outline: 2px solid black;
+}
+
+footer{
+  background: #f0f0f4;
+  height: 136px;
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px 64px;
+
+  margin-bottom: 100px;
+
+  border-top: 1px solid #D6D6D6;
+  border-radius: 0px 0px 8px 8px;
+  border: 0;
+
+}
+footer .button{
+  width: 608px;
+  height: 56px;
+
+  color: white;
+  font-size:1rem;
+  background: #04D361;
+  border-radius: 8px;
+  border: none;
+}
+footer .button:hover{
+  background: #07ae52;
+  cursor: pointer;
+}
+
+input:invalid
+{
+  border: 1px solid red;
+}
