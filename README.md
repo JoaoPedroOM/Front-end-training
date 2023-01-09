@@ -9,6 +9,6 @@ Treinamento de front-end com HTML, CSS e JS
 
 #
 
-# Formulário 
+# Formulário  (Form)
 
 ![formulario](https://user-images.githubusercontent.com/63527881/199634203-eda4aad8-276c-4092-b3e6-9785d65e2c2c.png)
